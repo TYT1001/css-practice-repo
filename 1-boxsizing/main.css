@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+#container {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+}
+#child-1 {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 10px solid red;
+  background-color: aquamarine;
+  box-sizing: content-box;
+}
+#child-2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(17, 85, 153);
+  box-sizing: border-box;
+  padding: 30px;
+  border: 10px solid gray;
+}
+#child-3 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(155, 37, 135);
+  border: 5px rgb(0, 13, 19) solid;
+}

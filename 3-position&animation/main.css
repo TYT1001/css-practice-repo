@@ -1,0 +1,110 @@
+html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.container-child {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  width: 200px;
+  border: solid black 2px;
+  position: absolute;
+  left: 16%;
+  transform: rotate();
+}
+.container {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 500px;
+  border: 2px rgb(255, 5, 5) solid;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.container {
+  animation: rotate 3s;
+}
+.container-child-1,
+.container-child-2,
+.container-child-3,
+.container-child-3 {
+  border: solid 2px black;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+.container-child-1 {
+  animation: rotate-1 3s;
+  transform: rotate(0deg);
+}
+.container-child-2 {
+  animation: rotate-2 3s;
+  transform: rotate(30deg);
+}
+.container-child-3 {
+  animation: rotate-3 3s;
+  transform: rotate(60deg);
+}
+
+@keyframes rotate-1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-2 {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}
+@keyframes rotate-3 {
+  from {
+    transform: rotate(240deg);
+  }
+  to {
+    transform: rotate(600deg);
+  }
+}
+
+@keyframes rotate-4 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+h1 {
+  margin: 30px 84px;
+  position: absolute;
+  font-size: 35px;
+}
+span {
+  color: rgb(216, 210, 161);
+}
+.child-1 {
+  width: 70px;
+  height: 50px;
+  background-color: black;
+
+  float: right;
+}
+.child-2 {
+  width: 70px;
+  height: 50px;
+  background-color: rgb(255, 0, 0);
+}
